@@ -17,6 +17,15 @@ export default class appBody extends Component {
 
   constructor(props) {
     super(props);
+    
+        // const client = new Paho.MQTT.Client('m12.cloudmqtt.com', 10310, 'esp8266');
+    // client.onConnectionLost = this.onConnectionLost;
+    // client.onMessageArrived = this.onMessageArrived;
+    // client.connect({ 
+    //   userName: "bpfkktrd",
+    //   password: "zdu9SCC_2duo",
+    //   onSuccess: this.onConnect
+    // });
 
     const client = new Paho.MQTT.Client('iot.eclipse.org', 443, 'uname');
     client.onConnectionLost = this.onConnectionLost;
